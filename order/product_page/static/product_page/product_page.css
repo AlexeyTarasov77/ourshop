@@ -1,0 +1,33 @@
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; /* Пространство между карточками */
+}
+
+.card {
+    width: calc(16.6667% - 20px); /* Чтобы каждая карточка занимала 25% ширины с отступом */
+    background: #303030;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    
+}
+
+.card img {
+    width: 100%; /* Растянуть изображение на всю ширину карточки */
+    text-align: center; /* Чтобы изображение было по центру карточки */
+}
+
+
+
+hr {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
