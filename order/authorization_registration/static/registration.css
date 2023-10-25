@@ -6,6 +6,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
   }
+  body {
+    overflow-x: hidden;
+  }
   
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
@@ -102,12 +105,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
   /*-- end reset --*/
   body {
-    background: #76b852;
+    background: #000000;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #76b852, #8DC26F);
-    background: -moz-linear-gradient(to top, #76b852, #8DC26F);
-    background: -o-linear-gradient(to top, #76b852, #8DC26F);
-    background: linear-gradient(to top, #76b852, #8DC26F);
+    background: -webkit-linear-gradient(to top, #000000, #868686);
+    background: -moz-linear-gradient(to top, #000000, #868686);
+    background: -o-linear-gradient(to top, #000000, #868686);
+    background: linear-gradient(to top, #000000, #868686);
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
@@ -202,9 +205,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   input[type="submit"] {
     font-size: .9em;
     color: #fff;
-    background: #76b852;
     outline: none;
-    border: 1px solid #76b852;
     cursor: pointer;
     padding: 0.9em;
     -webkit-appearance: none;
@@ -219,7 +220,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     -o-transition: .5s all;
     -ms-transition: .5s all;
     transition: .5s all;
-    background: #8DC26F;
   }
   
   .agileits-top p {
@@ -239,7 +239,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
   
   .agileits-top p a:hover {
-    color: #76b852;
+    color: #5254b8;
   }
   
   /*-- //main --*/
@@ -253,14 +253,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
   
   input.checkbox {
-    background: #8DC26F;
+    /* background: #e50000; */
     cursor: pointer;
     width: 1.2em;
     height: 1.2em;
   }
   
   input.checkbox:before {
-    content: "";
+    /* content: ""; */
     position: absolute;
     width: 1.2em;
     height: 1.2em;
@@ -269,7 +269,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
   
   input.checkbox:after {
-    content: "";
+    /* content: ""; */
     position: absolute;
     top: 0px;
     left: 0;
@@ -349,7 +349,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
   /*-- //copyright --*/
   .wrapper {
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
   }
   

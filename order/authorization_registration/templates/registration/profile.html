@@ -3,13 +3,17 @@
 
 {% block links %}
 <link rel="stylesheet" href="{% static 'profile.css' %}">
+<script src="{% static 'js/addProfilePhoto.js' %}" defer></script>
 {% endblock %}
 
 {% block content %}
 <div class="container">
-    <div class="cover-photo">
+    <div title="Нажмите что-бы добавить фото профиля." class="cover-photo">
       <img src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg" class="profile">
+      <input type="file" id="image-input" accept="image/*">
     </div>
+    
+
     <div class="profile-name">{{user.username}}</div>
     <p class="about">Ласкаво просимо до вашого особистого профілю! <br> Дізнайтесь більше про нас, перейшовши на головну сторінку.<br>Для цього натиснiть кнопку нижче</p>
     <button class="msg-btn" onclick="location.href='{% url 'main' %}'">Головна сторiнка</button>

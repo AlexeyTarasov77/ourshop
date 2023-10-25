@@ -2,29 +2,63 @@ body {
     background: #000;
 }
 
-.authorize {
-    display: inline-block;
-    position: relative;
-    left: 1000px;
-    width: 100px;
-    padding: 5px 5px; /* Регулируйте отступы, чтобы настроить размер кнопки */
-    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
-    background-color: #ffffff; /* Цвет фона кнопки */
-    color: rgb(0, 0, 0); /* Цвет текста */
-    border: none; /* Убрать границу */
-    border-radius: 5px; /* Закруглить углы кнопки */
-    font-size: 20px;
+/* CSS */
+.button-profile {
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  left: 1000px;
+  top: -10px;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
 }
 
-.authorize:hover {
-    background: #00d9ff;
+.button-profile:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
 }
+
+.button-profile:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-profile:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
 
 
 #header {
     position: fixed;
-    display: inline-block;
+    box-sizing:initial;
+    display: flex;
+    justify-content: center;
     width: 100%;
+    min-height: max-content;
     height: 20px;
     z-index: 10;
     text-align: center;
@@ -42,7 +76,6 @@ h1 {
     text-align: center; 
     -webkit-text-stroke: 1px black;
     background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
-    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
@@ -71,10 +104,9 @@ h1 {
 
 .link {
     position: relative;
-    right: 100px;
     text-decoration: none;
     color: white;
-    margin-right: 80px;
+    margin-right: 100px;
     font-size: 21px;
     transition: color 1s ease;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -88,6 +120,7 @@ h1 {
     content: "";
     position: absolute;
     left: 0;
+    top: 110%;
     right: 0;
     bottom: 0; /* Подчеркивание только снизу */
     height: 2px;
@@ -95,6 +128,7 @@ h1 {
     transform-origin: left;
     transform: scaleX(0);
     transition: transform 1s ease, background 1s ease;
+    
 }
 
 .link:hover::after {
@@ -104,11 +138,6 @@ h1 {
 
 a {
     text-decoration: none;
-    transition: transform 0.3s ease;
-}
-
-a:hover {
-    transform: scale(1.1);
 }
 
 p {

@@ -7,6 +7,8 @@
     <title>OnlineShop</title>
     <!-- <link rel="stylesheet" href="{% static 'app_settings/img/shopping_cart.png' %}"> -->
     <link rel="stylesheet" href="{% static 'app_settings/app_settings.css' %}">
+    <link rel="icon" href="https://icons.iconarchive.com/icons/limav/flat-gradient-social/512/Apple-Store-icon.png" type="image/x-icon">
+
     {% block links %}
         
     {% endblock %}
@@ -15,7 +17,7 @@
     <header>
         <nav id="header">
             
-            <a href="{% url 'profile' %}" class="authorize">Профiль</a>
+            <a href="{% url 'profile' %}" class="button-profile">Профiль</a>
             <a href="{% url 'main' %}" class='link'>Головна сторiнка</a>
             <a href="{% url 'contact' %}" class='link'>Контакти</a>
             <a href="{% url 'shopping' %}" id="basket"><img src="{% static 'app_settings/img/basket.png' %}" width="60px" height="60px" alt=""></a>

@@ -27,12 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
   
         // Найдите и удалите товар из списка корзины в локальном хранилище
         const updatedCartItems = cartItems.filter(product => product.id !== productId);
-  
+
         // Обновите список товаров в локальном хранилище
         localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
   
         // Удалите карточку товара из отображения на странице корзины
         cartWrapper.removeChild(card);
+        // перезагружаем страницу после каждого удаления во избежание бага
+        location.reload()
       }
     });
   });
