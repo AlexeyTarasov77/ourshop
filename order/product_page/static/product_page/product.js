@@ -18,7 +18,7 @@ window.addEventListener('click', function(event) {
       image: card.querySelector('.product-img').src,
       id: card.dataset.id
     }
-
+    console.log(productInfo)
     // Получите текущий список товаров в корзине из локального хранилища
     let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 

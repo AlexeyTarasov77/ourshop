@@ -4,13 +4,21 @@ h2 {
     text-align: center;
 }
 
+.link::after {
+    top: 145%
+}
+
+.main-title {
+    -webkit-text-stroke:#000000 1px ;
+}
+
 #about-us {
     position: absolute; /* Устанавливаем абсолютную позицию элемента */
     text-align: center;
 }
 
 #about-us h2 {
-    -webkit-text-stroke: 0.5px black;
+    -webkit-text-stroke:0.4px black;
     background: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -18,6 +26,14 @@ h2 {
     position: relative;
     right: 100px;
 }
+
+
+.dropdown {
+    position: absolute;
+    right: 120px;
+    top: 10px;
+} 
+
 
 /* Устанавливаем элемент .slider-wrapper как контейнер сетки */
 .slider-wrapper .image-list {
@@ -27,7 +43,7 @@ h2 {
     margin-bottom: 30px; /* Устанавливаем отступ снизу */
     overflow-x: auto; /* Разрешаем горизонтальную прокрутку, если необходимо */
     scrollbar-width: none; /* Убираем стандартный вид скроллбара в Firefox */
-    grid-template-columns: repeat(16, 1fr); /* Задаем сетку с 10 колонками равной ширины */
+    grid-template-columns: repeat(16, 1fr); /* Задаем сетку с 16 колонками равной ширины */
     margin-top: 300px; /* Устанавливаем отступ сверху в 300 пикселей */
 }
 
@@ -49,8 +65,8 @@ body {
 }
 
 .container {
-    max-width: 1390px; /* Устанавливаем максимальную ширину контейнера */
-    width: 98%; /* Устанавливаем ширину в 95% от родительского элемента */
+    max-width: 1396px; /* Устанавливаем максимальную ширину контейнера */
+    width: 100%; /* Устанавливаем ширину в 95% от родительского элемента */
 }
 
 .slider-wrapper {
@@ -69,7 +85,7 @@ body {
     display: flex; /* Устанавливаем элемент как flex-контейнер */
     cursor: pointer; /* Устанавливаем курсор "указатель" */
     font-size: 2.2rem; /* Устанавливаем размер шрифта */
-    background: #ffffff; /* Устанавливаем фон */
+    background: #a1a0a0; /* Устанавливаем фон */
     align-items: center; /* Выравниваем элементы по вертикали */
     justify-content: center; /* Выравниваем элементы по горизонтали */
     border-radius: 50%; /* Создаем круглый элемент */
@@ -85,7 +101,7 @@ body {
 }
 
 .slider-wrapper .slide-button#next-slide {
-    right: -20px; /* Устанавливаем отрицательное смещение справа */
+    right: -5px; /* Устанавливаем отрицательное смещение справа */
 }
 
 .container .slider-scrollbar {
@@ -111,7 +127,7 @@ body {
     position: absolute; /* Устанавливаем абсолютную позицию элемента */
     height: 100%; /* Устанавливаем высоту элемента */
     width: 50%; /* Устанавливаем ширину элемента */
-    background: #00fbff; /* Задаем цвет фона элемента */
+    background: #ff6600; /* Задаем цвет фона элемента */
     border-radius: inherit; /* Наследуем закругленные углы от родителя */
     cursor: grab; /* Задаем курсор "захват" */
 }

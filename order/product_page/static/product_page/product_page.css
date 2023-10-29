@@ -37,7 +37,7 @@ transform: translateY(0);
 .card {
     width: calc(16.6667% - 20px); /* Чтобы каждая карточка занимала 25% ширины с отступом */
     background: #303030;
-    border: 1px solid #ddd;
+    border: 1px solid #ff0202;
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 50px;
@@ -58,9 +58,13 @@ hr {
 
 h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 33px;
     margin-bottom: 40px;
     margin-top: 50px;
+}
+
+h3 {
+    color: white;
 }
 
 #footer {
