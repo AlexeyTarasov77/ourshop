@@ -7,7 +7,6 @@ defoltImage.addEventListener("click", () => {
 
 imageInput.addEventListener("change", () => {
   const selectedFile = imageInput.files[0];
-  console.log(selectedFile);
   if (selectedFile) {
     defoltImage.src = URL.createObjectURL(selectedFile);
   }

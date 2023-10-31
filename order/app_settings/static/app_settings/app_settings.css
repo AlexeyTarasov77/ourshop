@@ -1,12 +1,18 @@
+* {
+    font-family: 'Roboto';
+}
+
 main, header, footer {
     padding: 30px;
 }
 
 body {
     height: 100%;
+    background-color: #999;
     background-image: url('img/background.jpg');
-    background-repeat: no-repeat;
+    background-position: center center; 
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .base-wrapp {
@@ -59,6 +65,7 @@ main {
 }
 
 .button-profile:hover {
+  color: white;
   box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
   transform: translateY(-2px);
 }
@@ -96,7 +103,6 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }  
 
 #logo {
@@ -116,7 +122,7 @@ h1 {
 }
 
 #basket:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .link {
@@ -126,7 +132,6 @@ h1 {
     margin-right: 120px;
     font-size: 23px;
     transition: color 1s ease;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .link:hover{
@@ -137,7 +142,7 @@ h1 {
     content: "";
     position: absolute;
     left: 0;
-    top: 120%;
+    top: 125%;
     right: 0;
     bottom: 0; /* Подчеркивание только снизу */
     height: 2px;
@@ -158,7 +163,6 @@ a {
 }
 
 p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
 }
 /* 

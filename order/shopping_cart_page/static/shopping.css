@@ -1,3 +1,8 @@
+body {
+    background-image: none;
+    background-color: #222222;
+}
+
 .card-grid {
     display: flex;
     flex-wrap: wrap;
@@ -31,5 +36,36 @@ border-radius: 5px;
 
 .remove-from-cart:hover {
     background-color: orangered;
+}
+
+h3 {
+    color: #ddd;
+}
+.purchase-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+.purchase-button {
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: #0678fa;
+    color: #fff;
+    border: 0px;
+    transition: background 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.purchase-button:hover {
+    background: #0633fa;
+}
+
+.purchase-button:active {
+    transform: translateY(2px);
 }
 

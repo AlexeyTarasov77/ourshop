@@ -1,11 +1,30 @@
 h2 {
     position: relative; /* Устанавливаем позицию относительно исходной позиции */
     top: 50px; /* Сдвигаем элемент вниз на 50 пикселей */
+    line-height: 48px;
     text-align: center;
 }
 
+.banner {
+    margin: 50px 0px 50px 0px;
+}
+
 .link::after {
-    top: 145%
+    top: 135%
+}
+
+.link {
+    position: relative;
+    bottom: 3px;
+}
+
+.txt-about {
+    box-shadow: 0px 0px 10px 4px rgb(251, 152, 206);
+    transition: box-shadow 0.5s ease-out;
+}
+
+.txt-about:hover {
+    box-shadow: 0px 0px 10px 8px rgb(251, 152, 206);
 }
 
 .main-title {
@@ -18,7 +37,7 @@ h2 {
 }
 
 #about-us h2 {
-    -webkit-text-stroke:0.4px black;
+    -webkit-text-stroke:0.5px black;
     background: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -56,6 +75,7 @@ body {
     align-items: center; /* Выравниваем элементы по вертикали */
     justify-content: center; /* Выравниваем элементы по горизонтали */
     min-height: 100vh; /* Устанавливаем минимальную высоту во всю высоту видимой области */
+    padding: 40px;
 }
 
 .slider-wrapper .image-list .image-item {
