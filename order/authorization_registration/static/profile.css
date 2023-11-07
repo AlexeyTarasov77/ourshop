@@ -1,7 +1,9 @@
 body {
   font-family: Montserrat, sans-serif;
   background: #221d36;
+  max-height: 100%;
 }
+
 .container {
   position: relative;
   top: 250px;
@@ -21,11 +23,6 @@ body {
   border-radius: 5px 5px 0 0;
 }
 
-#image-input {
-  position: absolute;
-  top: 5000px;
-}
-
 .profile {
   height: 120px;
   width: 120px;
@@ -34,7 +31,13 @@ body {
   border: 1px solid #1f1a32;
   padding: 7px;
   background: #292343;
+  transition: transform 0.7s ease;
 }
+
+.profile:hover{
+  transform: rotate(-360deg);
+}
+
 .profile-name {
   font-size: 25px;
   font-weight: bold;

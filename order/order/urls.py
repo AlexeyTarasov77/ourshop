@@ -17,6 +17,7 @@ from django.contrib import admin, auth
 from django.urls import path, include
 from contact_page.views import contact_page
 from main_page.views import main_page
+from authorization_registration.views import RegisterView, profile_view
 from product_page.views import product_page
 from shopping_cart_page.views import shopping_cart_page
 
@@ -27,6 +28,8 @@ urlpatterns = [
     path('contact_page/', contact_page, name='contact'),
     path('product_page/', product_page, name='product'),
     path('shopping_cart_page/', shopping_cart_page, name='shopping'),
+    path('profile/', profile_view, name='profile'),
+    path('registration/', RegisterView.as_view(), name='registration'),
     path('', include('authorization_registration.urls')),
     path('accounts/', include('django.contrib.auth.urls'))
 
