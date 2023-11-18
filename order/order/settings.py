@@ -108,11 +108,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LOGIN_REDIRECT_URL = reverse_lazy("registration:profile")
+
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
-AUTH_USER_MODEL = 'authorization_registration.Buyer'
+
 
 
 

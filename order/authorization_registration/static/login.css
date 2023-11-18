@@ -180,6 +180,28 @@ input[type="submit"]:active
   opacity: 0.6;
 }
 
+.error-block p  {
+  color: rgb(250, 4, 4);
+  filter: drop-shadow(0 0 10px rgb(255, 0, 0));
+  font-size: 17px;
+  text-align: center;
+}
+
+.error-block p::before{
+  content: '❌';
+  filter: drop-shadow(0px 0px 5px red);
+  position: relative;
+  right: 5px;
+}
+
+.error-block {
+  background: rgba(25, 0, 255, 0.226);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+
 @media (max-width: 900px)
 {
   section span 

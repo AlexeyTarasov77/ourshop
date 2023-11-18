@@ -26,13 +26,17 @@
             <div class="inputBox">
                 <input type="password" id="password" name="password" required>
                 <i>password</i>
-                {{ form.errors }}
             </div>
+            {% if error %}
+            <div class="error-block">
+                <p>{{error}}</p>
+            </div>
+            {% endif %}
             <div class="links">
                 <a href="#">Forgot Password</a>
                 <a href="{% url 'registration' %}">Signup</a>
             </div>
-            <div class="inputBox">
+            <div class="inputBox btn">
                 <input type="submit" value="Login">
             </div>
         </div>

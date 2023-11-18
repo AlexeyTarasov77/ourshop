@@ -34,7 +34,9 @@
 						</label>
 						<div class="clear"> </div>
 					</div>
-                    {{ form.errors }}
+					<div class="error-block">
+						<p>{{ error }}</p>
+					</div>
 					<input class="btn btn-primary btn-lg btn-block" type="submit" value="SIGNUP">
 				</form>
 				<p>Don't have an Account? <a href="{% url 'login' %}"> Login Now!</a></p>
