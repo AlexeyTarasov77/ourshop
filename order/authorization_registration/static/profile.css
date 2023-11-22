@@ -6,7 +6,7 @@ body {
 
 .container {
   position: relative;
-  top: 250px;
+  top: 10vh;
   user-select: none;
   margin: 0px auto;
   background: #231e39;

@@ -17,15 +17,20 @@
 <body>
     <div class="base-wrapp">
     <header>
-        {% block header %}
-        {% endblock %} 
         <nav id="header">
-            <a href="{% url 'profile' %}" class="button-profile">Профiль</a>
-            <a href="{% url 'main' %}" class='link'>Головна сторiнка</a>
-            <a href="{% url 'contact' %}" class='link'>Контакти</a>
-            <a href="{% url 'shopping' %}" id="basket"><img src="{% static 'app_settings/img/basket.png' %}" width="60px" height="60px" alt=""></a>
-            <a href="{% url 'product' %}" class='link'>Товари</a>
             <a href="{% url 'main' %}" id="logo"><img src="{% static 'app_settings/img/logo2.png' %}" width="60px" height="60px" alt=""></a>
+            <div class="middle-block">
+                <a href="{% url 'main' %}" class='link'>Головна сторiнка</a>
+                <a href="{% url 'contact' %}" class='link'>Контакти</a>
+                <a href="{% url 'product' %}" class='link'>Товари</a>
+            </div>
+            <div class="last-block">
+                <a href="{% url 'profile' %}" class="button-profile">Профiль</a>
+                <a href="{% url 'shopping' %}" id="basket"><img src="{% static 'app_settings/img/basket.png' %}" width="60px" height="60px" alt=""></a>
+                {% block header %}
+        
+                {% endblock %}
+            </div>
         </nav>
         </header>
     <main>

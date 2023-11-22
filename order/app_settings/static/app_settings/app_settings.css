@@ -37,6 +37,8 @@ main {
   color: #fff;
   cursor: pointer;
   display: inline-flex;
+  order: 2;
+  margin: 10px 0px 0px 0px;
   font-family: "JetBrains Mono",monospace;
   height: 48px;
   justify-content: center;
@@ -46,9 +48,6 @@ main {
   overflow: hidden;
   padding-left: 16px;
   padding-right: 16px;
-  position: relative;
-  left: 1060px;
-  top: -10px;
   text-align: left;
   text-decoration: none;
   transition: box-shadow .15s,transform .15s;
@@ -79,19 +78,18 @@ main {
 
 #header {
     position: fixed;
+    top: 0;
+    right: 0;
     box-sizing:initial;
     display: flex;
-    justify-content: center;
-    width: 100%;
-    min-height: max-content;
-    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    max-height: 20px;
     z-index: 10;
     text-align: center;
-    top: -10px;
-    left: 0px;
     background-color:  #141414;
     padding: 30px 0px;
-    overflow: hidden; 
 }
 
 
@@ -106,9 +104,7 @@ h1 {
 }  
 
 #logo {
-    position: absolute;
-    left: 10px;
-    top: 15px;
+    order: 1;
     filter: drop-shadow(0px 0px 7.5px rgb(255, 255, 255));
     transition: all 0.7s ease;
 }
@@ -118,47 +114,64 @@ h1 {
 }
 
 #basket {
-    position: absolute;
-    right: 20px;
-    top: 10px;
+    order: 3;
+    margin: 0px 0px 10px 0px;
     transition: transform 0.4s ease;
 }
+
 
 #basket:hover {
     transform: scale(1.05);
 }
 
 .link {
-    position: relative;
     text-decoration: none;
     color: white;
-    margin-right: 120px;
     font-size: 23px;
     transition: color 1s ease;
 }
+
+
+.middle-block {
+    display: flex;
+    gap: 100px;
+    order: 2; /* Средний блок (ссылки) в центре (второй элемент) */
+}
+
+.last-block {
+    order: 3; /* Последний блок (профиль и корзина) в правом углу (третий элемент) */
+    display: flex;
+    gap: 20px; /* Регулируйте расстояние между элементами по вашему усмотрению */
+    padding: 0px 10px 0px 0px;
+}
+
+  
 
 .link:hover{
     color: coral;
 }
 
-.link::after {
+.link {
+    position: relative; /* Относительное позиционирование для .link */
+  }
+  
+  .link::after {
     content: "";
     position: absolute;
     left: 0;
-    top: 125%;
+    bottom: -2px; /* Поднимаем подчеркивание на 2 пикселя, чтобы было невидимо изначально */
     right: 0;
-    bottom: 0; /* Подчеркивание только снизу */
     height: 2px;
     background: coral; /* Цвет подчеркивания */
     transform-origin: left;
     transform: scaleX(0);
     transition: transform 1s ease, background 1s ease;
-    
-}
-
-.link:hover::after {
+  }
+  
+  .link:hover::after {
     transform: scaleX(1);
-}
+  }
+  
 
 
 a {
