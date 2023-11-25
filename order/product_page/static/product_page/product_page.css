@@ -4,6 +4,9 @@
     gap: 24px; /* Пространство между карточками */
 }
 
+.product-price::after {
+    content: '$';
+}
 
 .add-to-cart {
 display: flex;
