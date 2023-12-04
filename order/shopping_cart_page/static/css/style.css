@@ -223,3 +223,6 @@ label {
     width: 40%;
   }
 }
+footer {
+  display: none;
+}

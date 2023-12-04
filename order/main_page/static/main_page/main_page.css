@@ -7,11 +7,13 @@
 }
 
 .banner-wrapp {
-    margin: 50px 0px 50px 0px; 
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center; 
 }
 
 .banner-wrapp img {
-    width: 100%;
+    width: 90%;
     height: 100%;
     border-radius: 5px;
 }
@@ -73,13 +75,7 @@
     display: none; /* Скрываем скроллбар в Chrome и Safari */
 }
 
-body {
-    display: flex; /* Устанавливаем flex-контейнер для body */
-    align-items: center; /* Выравниваем элементы по вертикали */
-    justify-content: center; /* Выравниваем элементы по горизонтали */
-    min-height: 100vh; /* Устанавливаем минимальную высоту во всю высоту видимой области */
-    padding: 40px;
-}
+
 
 .slider-wrapper .image-list .image-item {
     width: 325px; /* Устанавливаем ширину элемента */
@@ -181,3 +177,9 @@ body {
     top: -10px; /* Смещаем элемент вверх на 10 пикселей */
     bottom: -10px; /* Смещаем элемент вниз на 10 пикселей */
 }
+
+footer {
+    position: static;
+    padding: 20px;
+}
+
